@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
    //stepper 加減數量
     @IBAction func itemStepper(_ sender: UIStepper) {
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
         totlaPrice = (item1*price[0])+(item2*price[1])+(item3*price[2])+(item4*price[3])
         totalNumber.text = "\(totlaPrice)"
     }
+    //歸零stepper、各個label
     @IBAction func remove(_ sender: Any) {
         stepper1.value = 0
         stepper2.value = 0
