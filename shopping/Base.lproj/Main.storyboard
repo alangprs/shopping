@@ -61,6 +61,9 @@
                                 <state key="normal" title="結帳">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="takeTotlaNUmber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bsl-Iv-UfN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-gQ-q6a">
                                 <rect key="frame" x="20" y="780" width="75" height="66"/>
@@ -110,21 +113,33 @@
                                 <rect key="frame" x="278" y="188" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="itemStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="hsR-fr-HGo"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="QZe-hh-NtL">
                                 <rect key="frame" x="278" y="372" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="itemStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="rGk-ie-NoF"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="qMc-po-X7E">
                                 <rect key="frame" x="278" y="556" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="itemStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="dOB-nk-Sj3"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="iSD-zj-Z4O">
                                 <rect key="frame" x="286" y="740" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="itemStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="eeV-EK-Hif"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybd-SA-jAp">
                                 <rect key="frame" x="284" y="159" width="52" height="21"/>
@@ -200,6 +215,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
+                    <connections>
+                        <outlet property="quantity1" destination="kQV-s9-qH1" id="Qc8-0N-E2a"/>
+                        <outlet property="quantity2" destination="IJY-lx-XtE" id="4ou-wm-9ME"/>
+                        <outlet property="quantity3" destination="YP6-CS-iCf" id="L4q-iV-xbK"/>
+                        <outlet property="quantity4" destination="Iya-iO-D8Q" id="XWx-mo-Btm"/>
+                        <outlet property="stepper1" destination="XVm-kX-fPA" id="eeb-Ru-d68"/>
+                        <outlet property="stepper2" destination="QZe-hh-NtL" id="5r7-L8-A4J"/>
+                        <outlet property="stepper3" destination="qMc-po-X7E" id="LQ9-b6-cuk"/>
+                        <outlet property="stepper4" destination="iSD-zj-Z4O" id="gdV-dd-gYF"/>
+                        <outlet property="totalNumber" destination="QUM-En-Hdb" id="LYq-MG-r2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
