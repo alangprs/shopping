@@ -15,10 +15,7 @@ class ViewController: UIViewController {
     //總額laber
     @IBOutlet weak var totalNumber: UILabel!
     
-    
-    
-    
-    
+
     //將stepper的值 轉成整數才不會出現小數點
     var item1:Int=0
     var item2:Int=0
@@ -44,10 +41,21 @@ class ViewController: UIViewController {
         item4 = Int(stepper4.value)
         quantity4.text = "\(item4)"
     }
-    
+    //計算加總金額顯示在label
     @IBAction func takeTotlaNUmber(_ sender: UIButton) {
         totlaPrice = (item1*price[0])+(item2*price[1])+(item3*price[2])+(item4*price[3])
         totalNumber.text = "\(totlaPrice)"
+    }
+    @IBAction func remove(_ sender: Any) {
+        stepper1.value = 0
+        stepper2.value = 0
+        stepper3.value = 0
+        stepper4.value = 0
+        quantity1.text = String(0)
+        quantity2.text = String(0)
+        quantity3.text = String(0)
+        quantity4.text = String(0)
+        totalNumber.text = String(0)
     }
     
     
